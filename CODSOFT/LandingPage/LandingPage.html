@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+	integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		.nav{
+			display: flex;
+			align-items: center;
+		}
+		.nav img{
+			margin: 0 30px;
+		}
+        header {
+        	
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+		.header{
+			display: flex;
+		}
+		.nav{
+			flex: 50%;
+		}
+
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.image {
+			opacity: 1;
+			display: block;
+			width: 100%;
+			height: auto;
+			transition: .5s ease;
+			backface-visibility: hidden;
+		}
+		.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		.container:hover .image {
+			opacity: 0.3;
+		}
+
+		.container:hover .middle {
+			opacity: 1;
+		}
+
+		.text {
+			background-color: #04AA6D;
+			color: white;
+			font-size: 16px;
+			padding: 16px 32px;
+		}
+        footer {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #7f8c8d;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .row{
+        	display: flex;
+        	margin-left: 30px;
+        }
+        .column{
+        	position: relative;
+        	flex: 50%;
+        	margin-left: 10px;
+        }
+        .bottomCenter{
+        	position: absolute;
+        	border: 2px solid blue;
+        	
+        }
+        #im{
+        	position: absolute;
+        	z-index: 2;
+        	margin-top: 50px;
+        	margin-left: 50%;
+        	height: 300px;
+        	width: 200px;
+        }
+         .os{
+        	margin-left: 30px;
+        }
+        i{
+        	height: 30px;
+        	width: 30px;
+        }
+        ul {
+		  	list-style-type: none;
+		  	margin-left: 500px;
+		  	
+		}
+
+		li {
+  			display: inline;
+  			margin-left: 30px;
+		}
+		a{
+			color: black;
+		}
+		a:hover {
+			color: white;
+		}
+		.bottomCenter{
+			height: 50px;
+			width: 220px;
+			margin-left: 48%;
+			margin-top: 298px;
+			position: relative;
+			z-index: 1;
+			border: 2px solid blue;
+		}
+		table{
+			width: 100%;
+		}
+		.image-container{
+			position: relative;
+		}
+		.image-name{
+			position: absolute;
+			bottom: -30px;
+			left: 25%;
+			width: 62%;
+			height: 40px;
+			font-size: 20px;
+			background-color:  white;
+			color: black;
+			text-align: center;
+			padding: 10px;
+			margin-bottom: 0px;
+		}
+		.image-c{
+			border-radius: 50%;
+			height: 65px;
+			width: 65px;
+			background-color:  #3498db;
+			position: absolute;
+			bottom: -30px;
+			left: 20%
+		}
+		.image-c img{
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			position: absolute;
+		}
+		.tbl{
+			margin-top: 50px;
+			margin-bottom: 100px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header">
+    	<div class="nav">
+    	
+    	<i class="fa-solid fa-file-arrow-down"></i>
+        <h1>Landing Page</h1>
+        <div class="nav">
+        <ul>
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#Blog">Blog</a></li>
+		  <li><a href="#Page">Page</a></li>
+		  <li><a href="#Services">Services</a></li>
+		  <li><a href="#Contact">Contact</a></li>
+		  <li><i class="fa-solid fa-magnifying-glass"></i></li>
+		</ul>
+		</div>
+        </div>
+    </div>
+    </header>
+
+	<div class="container">
+		<img src="D:\CODSOFT\images\km.jpg" alt="Avatar" class="image" style="width:100%">
+		<div class="middle">
+		  <div class="text">
+			<h1>I am Kamlakar Mane</h1>
+			<h1>And I'm a Java Developer</h1>
+		  </div>
+		</div>
+	  </div>
+
+    <div class="row">
+    	<div class="column">
+    		<h2>ABOUT US</h2>
+    		<hr style="width: 50px;text-align:left;margin-left:0;">
+        	<p><b>15 years, we passionate about achieving better result for our clients</b></p>
+        	<p>For the past 15 years, our journey has been defined by an unwavering passion for achieving remarkable results on behalf of our clients. 
+        	This significant milestone is not just a marker of time but a testament to the relentless dedication that has fueled our endeavors since day one.<br><br>
+
+			From the outset, our mission has been clear: to go beyond the ordinary, to push boundaries, and to elevate the standard of excellence in everything we do. 
+			This commitment to excellence has become the cornerstone of our identity, driving us to consistently deliver outcomes that exceed expectations.<br><br>
+			
+			In the dynamic landscape of our industry, where change is constant and challenges are ever-evolving, our passion has been a guiding force. 
+			It has propelled us to embrace innovation, to adapt swiftly to emerging trends, and to cultivate a culture of continuous improvement. Our clients have been the compass that directs our efforts, and their success has been the ultimate measure of our achievements.
+			</p>
+        	<a href="#" class="cta-button">READ MORE</a>
+    	</div>
+    	
+    	<div class="column">
+    		<img id="im" alt="Man" src="D:\CODSOFT\images\man.png">
+    		<div class="bottomCenter"></div>
+    	</div>
+    	
+    </div> 
+
+    <section>
+    	<div class="os">
+    	<h2>Our Services</h2>
+    	<hr style="width: 50px;text-align:left;margin-left:0;">
+    	<table class="tbl">
+    		<tr>
+    			<td> 
+    				<div class="image-container">
+    					<img alt="UserExperience" src="D:\CODSOFT\images\UserExperience.jpg" height="300px" width="90%">
+    					<p class="image-name">USER EXPERIENCE</p>
+                        <span class="image-c">
+                            <img src="D:\CODSOFT\images\ann.png"/>
+                        </span>
+    				</div>
+    			</td>
+    			<td>
+    				<div class="image-container">
+                        <img src="D:\CODSOFT\images\CreativeDraw.jpg" height="300px" width="90%">
+                        <p class="image-name">CREATIVE DESIGN</p>
+                        <span class="image-c">
+                            <img src="D:\CODSOFT\images\creative-design.png" />
+                        </span>
+                    </div>
+    			</td>
+    			<td>
+                    <div class="image-container">
+                        <img src="D:\CODSOFT\images\retina-ready.jpg" height="300px" width="90%">
+                        <p class="image-name">RETINA READY</p>
+                        <span class="image-c">
+                            <img src="D:\CODSOFT\images\dollar1.png"/>
+                        </span>
+                    </div>
+                </td>
+    		</tr>
+    	</table>    			
+      
+	    </div>
+    </section>
+
+    <footer>
+        <p>Contact us at: kmane6401@gmail.com</p>
+    </footer>
+</body>
+</html>

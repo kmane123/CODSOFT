@@ -1,0 +1,311 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo{
+	
+	height: 50px;
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 500px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.intro {
+	display: flex;
+    padding: 20px;
+    margin: 30px;
+}
+ 
+ .disc{
+ 	position: relative;
+ 	flex: 50%;
+ 	margin-right: 30px;
+ }
+
+.photo{
+	height: 400px;
+	width: 700px;
+	border-radius: 10%;
+}
+.fa-brands{
+	height: 50px;
+	width: 50px;
+	margin-left: 15px;
+}
+.icon{
+	height: 45px;
+	width: 50px;
+	margin-right: 15px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+.about {
+    padding: 30px;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.bio {
+    margin-top: 20px;
+}
+
+.WID {
+	display: flex;
+    padding: 20px;
+}
+ 
+ .wid{
+ 	position: relative;
+ 	flex: 50%;
+ 	margin: 30px;
+ }
+ .shock{
+ 	height: 20px;
+ 	width: 20px;
+ }
+.Proficiency {
+	display: flex;
+    padding: 20px;
+    margin: 20px;
+}
+ 
+ .pro{
+ 	position: relative;
+ 	flex: 50%;
+ 	margin: 30px;
+ }
+ #progress1, #progress2, #progress3 {
+    background: gray;
+    border-radius: 13px;
+    height: 20px;
+    width: 600px;
+    padding: 3px;
+}
+
+#progress1:after {
+    content: '';
+    display: block;
+    background:  #3498db;
+    width: 90%;
+    height: 100%;
+    border-radius: 9px;
+}
+#progress2:after {
+    content: '';
+    display: block;
+    background:  #3498db;
+    width: 70%;
+    height: 100%;
+    border-radius: 9px;
+}
+#progress3:after {
+    content: '';
+    display: block;
+    background:  #3498db;
+    width: 85%;
+    height: 100%;
+    border-radius: 9px;
+}
+.Project{
+	margin: 50px;
+}
+table{
+	width: 100%;
+	border-spacing: 30px;
+}
+.icon1{
+	height: 20px;
+	width: 20px;
+}
+.role{
+	
+	display: inline;
+}
+.si{
+	margin: o;
+	display: inline;
+}
+.size{
+	display: inline;
+	align:  right;
+	margin-left: 300px;
+}
+.td{
+	padding: 30px;
+	width: 50%;
+	box-shadow: 10px 10px 10px #888888;
+}
+.BProject {
+	display: flex;
+
+}
+ 
+ .bproject{
+ 	position: relative;
+ 	flex: 50%;
+ 	margin: 50px;
+ }
+ .bpro{
+ 	margin-right: 60px;
+ 	margin-top: 50px;
+ }
+ .btnHM{
+ 	display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 43%;
+ }
+ .Achievement{
+ 	margin: 50px;
+ }
+ .Ach{
+ 	padding: 20px;
+	width: 33.33%;
+	text-align: center;
+	box-shadow: 10px 10px 10px #888888;
+ }
+ .Ach:hover{
+	background:  #3498db; 
+	transform: scale(1.1);
+ }
+ .certificate{
+ 	height: 250px;
+ 	width: 100%;
+ }
+ .Blog{
+ 	margin: 50px;
+ }
+ .blog{
+ 	position: relative;
+ 	width: 50%;
+ 	padding: 20px;
+ 	box-shadow: 2px 2px 20px 1px #888888;
+ }
+.blog::before {  
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+.blog:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+.blog::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(270, 100%, 60%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+.Talks{
+	margin: 50px;
+}
+.btn2{
+	display: inline-block;
+    padding: 10px 20px;
+    width: 120px;
+    margin: 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn2:hover{
+	background-color: gray;
+	cursor: pointer;
+}
+
+.talks{
+	margin: auto;
+	box-shadow: 2px 2px 20px 1px #888888;
+	height: 320px;
+	width: 380px;
+	text-align: center;
+	padding: 20px;
+	background: linear-gradient(to right bottom,  hsl(270, 100%, 60%) 50%,white 50.4%);
+
+}
+.talks p{
+	margin-top: 110px;
+}
+.RichOut{
+	margin: 50px;
+}
+.richout{
+	width: 50%;
+}
+
+#richid{
+	margin: auto;
+}
+.richme{
+	height: 250px;
+	width: 250px;
+	border-radius: 120px;
+	margin-left: 35%;
+	border: 5px solid  hsl(270, 100%, 60%);
+	box-shadow: 10px 20px 10px #888888;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
